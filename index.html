@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BookApp</title>
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <form id="bookForm">
+    <input type="text" placeholder="Book name" name="name" required />
+    <input type="text" placeholder="Book author (min 3)" name="author" required pattern=".{3,}"/>
+    <input type="number" id="prio" placeholder="Book Priority (1-5)" name="priority" required min="1" max="5"/>
+    <input list="bookList" placeholder="Book Category" name="category" required />
+      <datalist id="bookList">
+        <option value="Komiks">
+        <option value="Romantyczna">
+        <option value="Sience Fiction">
+      </datalist>
+    <button>Add Book</button>
+  </form>
+  <div class="books"></div>
+
+
+
+<script src="./app.js">
+
+</script>
+</body>
+</html>

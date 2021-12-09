@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Poppins&family=Smooch&display=swap');
+:root{
+
+  --font: 'Poppins', sans-serif;
+
+  --dark: #383734;
+  --light: #ebe8e1;
+  --grey: #888888;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font);
+}
+body{
+  background-color: #888888;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 50vh;
+  margin: 20px;
+}
+form input{
+  width: 50%;
+  margin: 10px;
+  border-color: var(--dark);
+  border-radius: 20px;
+  height: 35px;
+  background-color: var(--light)
+}
+form input datalist option{
+  width: 50%;
+  margin: 10px;
+  border-color: var(--dark);
+  border-radius: 20px;
+  height: 35px;
+  background-color: var(--light)
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #222;
+  padding-left: 20px;
+}
+input .text{
+  color: #Blue;
+  padding-left: 20px;
+}
+button{
+  width: 50%;
+  outline: none;
+  background-color: #6495ed;
+  color: white;
+  border: 5px solid transparent;
+  cursor: pointer;
+}
+#bookForm * {
+  margin: 7px;
+  padding: 7px;
+  font-size: 18px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+.bookForm input {
+  border: 3px solid #6495ed;
+  outline: none;
+}
+
+.bookForm input:focus {
+  border: 3px solid #367bfa;
+}
+
+.bookForm button:active {
+  border-color: #367bfa;
+}
+.books {
+  margin: 0 25% 0 25% ;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border: 2px solid gray;
+  background-color: #ebebeb;
+  color: #2f2f2f;
+  border-radius: 15px;
+}
+.books div {
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+}
+.books div * {
+  margin: 5px;
+}
